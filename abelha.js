@@ -1,6 +1,6 @@
 let des = document.getElementById('des').getContext('2d')
 
-let bg = new Bg(0,0,500,700, 'assets/bg.png')
+let bg = new Bg(0,0,505,700, 'assets/bg.png')
 let bg2 = new Bg(0,-700,500,700, 'assets/bg.png')
 let flor = new Flor(0,0,50,50, 'assets/flower1.png')
 let bee = new Bee(200,500,100,100,'assets/bee1.png')
