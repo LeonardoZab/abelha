@@ -18,27 +18,31 @@ let jogar = true
 document.addEventListener('keydown', (event)=>{
     if(event.key === 'a'){
         // console.log('pressionado a tecla "a" ')
-        bee.dir = - 5
+        bee.dirX = - 5
     }else if(event.key === 'd'){
         // console.log('pressionado a tecla "d" ')
-        bee.dir = 5
+        bee.dirX = 5
     }else if(event.key === 's'){
-        console.log('pressionado a tecla "s" ')
+        // console.log('pressionado a tecla "s" ')
+        bee.dirY = 5
     }else if(event.key === 'w'){
-        console.log('pressionado a tecla "w" ')
+        // console.log('pressionado a tecla "w" ')
+        bee.dirY = - 5
     }
 })
 document.addEventListener('keyup', (event)=>{
     if(event.key === 'a'){
         // console.log('soltou a tecla "a" ')
-        bee.dir = 0
+        bee.dirX = 0
     }else if(event.key === 'd'){
         // console.log('soltou a tecla "d" ')
-        bee.dir = 0
+        bee.dirX = 0
     }else if(event.key === 's'){
-        console.log('soltou a tecla "s" ')
+        // console.log('soltou a tecla "s" ')
+        bee.dirY = 0
     }else if(event.key === 'w'){
-        console.log('soltou a tecla "w" ')
+        // console.log('soltou a tecla "w" ')
+        bee.dirY = 0
     }
 })
 

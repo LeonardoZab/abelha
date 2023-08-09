@@ -31,12 +31,14 @@ class Obj{
 }
 
 class Bee extends Obj{
-    dir = 0
+    dirY = 0
+    dirX = 0
     pts = 0
     vidas = 3
 
     move(){
-        this.x += this.dir
+        this.x += this.dirX
+        this.y += this.dirY
     }
 
     colid(objeto){
