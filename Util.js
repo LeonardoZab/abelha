@@ -39,6 +39,13 @@ class Bee extends Obj{
     move(){
         this.x += this.dirX
         this.y += this.dirY
+        if(this.x<= 1){
+            this.x = 1
+        }else if(this.x >= 399){
+            this.x = 399
+        }
+        
+        
     }
 
     colid(objeto){
